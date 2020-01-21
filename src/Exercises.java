@@ -138,7 +138,7 @@ public class Exercises {
 		if (numbers == null || numbers.length < 3) {
 			return false;
 		} else if(!(numbers == null || numbers.length < 3)) {
-			for(int i = 1; i < numbers.length-2; i++) {
+			for(int i = 1; i < numbers.length-1; i++) {
 				if(numbers[i] == numbers[i-1] && numbers[i] == numbers[i+1]) {
 					return true;
 				}
