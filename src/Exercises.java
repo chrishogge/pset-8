@@ -221,6 +221,18 @@ public class Exercises {
 	public int clumps(String[] values) {
 		// write your code here
 		
+		if (values == null) {
+			return -1;
+		} else if(!(values==null)) {
+			int clumps = 0;
+			for(int i = 0; i < values.length; i++) {
+				if(values[i] == values[i+1]) {
+					clumps++;
+				}
+			}
+			return clumps;
+		}
+		
 		return -1;		// default return value to ensure compilation
 	}
 }
