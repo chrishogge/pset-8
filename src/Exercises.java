@@ -26,7 +26,7 @@ public class Exercises {
 				endsMeet[i] = values[i];
 			}
 			
-			for(int j = n; j < values.length; j++) {
+			for(int j = values.length-n; j < values.length; j++) {
 				endsMeet[j] = values[j];
 			}
 			
