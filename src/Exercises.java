@@ -139,7 +139,7 @@ public class Exercises {
 			return false;
 		} else if(!(numbers == null || numbers.length < 3)) {
 			for(int i = 1; i < numbers.length-1; i++) {
-				if(numbers[i] == numbers[i-1]-1 && numbers[i] == numbers[i+1]-1) {
+				if(numbers[i] > numbers[i-1] && numbers[i] < numbers[i+1]) {
 					return true;
 				}
 			}
