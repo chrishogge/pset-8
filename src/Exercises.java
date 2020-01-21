@@ -225,10 +225,19 @@ public class Exercises {
 			return -1;
 		} else if(!(values==null)) {
 			int clumps = 0;
+			boolean clumpSection = false;
 			for(int i = 0; i < values.length; i++) {
-				if(values[i] == values[i+1]) {
-					clumps++;
+				
+				if(clumpSection) {
+					if(!(values[i].equals(values[i+1]))){
+						clumpSection = false;
+					}
+				}else if(!clumpSection) {
+					if(values[i].equals(values[i+1])) {
+						clumps++;
+					}
 				}
+			
 			}
 			return clumps;
 		}
