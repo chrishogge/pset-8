@@ -71,6 +71,36 @@ public class Exercises {
 	public double biggest(double[] numbers) {
 		// write your code here
 		
+		if (numbers == null || numbers.length < 3 || numbers.length % 2 == 0) {
+			return -1;
+		} else if(!(numbers == null || numbers.length < 3 || numbers.length % 2 == 0)) {
+			for(int a = 0; a < numbers.length; a++) {
+				if(numbers[a] < 0){
+					return -1;
+				}
+			}
+			
+			double firstMax = numbers[0];
+			double midMax = numbers[numbers.length/2];
+			double lastMax = numbers[numbers.length-1];
+			
+			if(firstMax > midMax) {
+				if(firstMax > lastMax) {
+					return firstMax;
+				}else if(lastMax > firstMax) {
+					return lastMax;
+				}
+			}else if(midMax > firstMax) {
+				if(midMax>lastMax) {
+					return midMax;
+				}else if(lastMax > midMax) {
+					return lastMax;
+				}
+			}
+			
+			
+		}
+		
 		return -1;		// default return value to ensure compilation
 	}
 	
