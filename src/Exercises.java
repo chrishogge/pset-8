@@ -232,7 +232,7 @@ public class Exercises {
 					if(!(values[i].equals(values[i+1]))){
 						clumpSection = false;
 					}
-				}else if(!clumpSection) {
+				}else if(clumpSection == false) {
 					if(values[i].equals(values[i+1])) {
 						clumps++;
 					}
