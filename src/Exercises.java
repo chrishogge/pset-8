@@ -135,6 +135,18 @@ public class Exercises {
 	public boolean increasing(int[] numbers) {
 		// write your code here
 		
+		if (numbers == null || numbers.length < 3) {
+			return false;
+		} else if(!(numbers == null || numbers.length < 3)) {
+			for(int i = 1; i < numbers.length-2; i++) {
+				if(numbers[i] == numbers[i-1] && numbers[i] == numbers[i+1]) {
+					return true;
+				}
+			}
+			
+			return false;
+		}
+		
 		return false;	// default return value to ensure compilation
 	}
 	
