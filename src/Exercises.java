@@ -235,6 +235,7 @@ public class Exercises {
 				}else if(clumpSection == false) {
 					if(values[i].equals(values[i+1])) {
 						clumps++;
+						clumpSection = true;
 					}
 				}
 			
