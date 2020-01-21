@@ -158,8 +158,8 @@ public class Exercises {
 		} else if(!(numbers == null || numbers.length < 1)) {
 			int count = 0;
 			
-			for(int i = 1; i < numbers.length-2; i++) {
-				if((numbers[i] == x && numbers[i+1] == x) || (numbers[i] == x && numbers[i+2] == x)) {
+			for(int i = 0; i < numbers.length-3; i++) {
+				if((numbers[i] == x && numbers[i+2] == x) || (numbers[i] == x && numbers[i+3] == x)) {
 					count++;
 				}
 			}
