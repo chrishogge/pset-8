@@ -16,7 +16,7 @@ public class Exercises {
 		return false;	// default return value to ensure compilation
 	}
 	
-	public static String[] endsMeet(String[] values, int n) {
+	public String[] endsMeet(String[] values, int n) {
 		// write your code here
 		if (values == null || values.length == 0 || values.length < n || n < 0) {
 			String[] returnArray = new String[0];
