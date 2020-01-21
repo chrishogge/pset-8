@@ -218,15 +218,15 @@ public class Exercises {
 		return false;	// default return value to ensure compilation
 	}
 	
-	public int clumps(String[] values) {
+	public static int clumps(String[] values) {
 		// write your code here
 		
 		if (values == null) {
 			return -1;
-		} else if(!(values==null)) {
+		} else if(values != null) {
 			int clumps = 0;
 			boolean clumpSection = false;
-			for(int i = 0; i < values.length; i++) {
+			for(int i = 0; i < values.length-1; i++) {
 				
 				if(clumpSection) {
 					if(!(values[i].equals(values[i+1]))){
@@ -244,5 +244,10 @@ public class Exercises {
 		}
 		
 		return -1;		// default return value to ensure compilation
+	}
+	
+	public static void main(String[] args) {
+		String[] test = new String[] {"abc","1","2","3","abc","7","7","7","abc","1","2","3","abc"};
+		System.out.println(clumps(test));
 	}
 }
