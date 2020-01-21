@@ -7,7 +7,7 @@ public class Exercises {
 			return false;
 		}
 		
-		// write your code here
+		
 		
 		if(a[0] == b[0] || a[a.length-1] == b[b.length-1]) {
 			return true;
@@ -17,7 +17,7 @@ public class Exercises {
 	}
 	
 	public String[] endsMeet(String[] values, int n) {
-		// write your code here
+		
 		if (values == null || values.length == 0 || values.length < n || n < 0) {
 			String[] returnArray = new String[0];
 			return returnArray;
@@ -44,7 +44,7 @@ public class Exercises {
 	}
 	
 	public int difference(int[] numbers) {
-		// write your code here
+		
 		if (numbers == null || numbers.length < 1) {
 			return -1;	
 		} else if(!(numbers == null || numbers.length < 1)){
@@ -69,7 +69,7 @@ public class Exercises {
 	}
 	
 	public double biggest(double[] numbers) {
-		// write your code here
+		
 		
 		if (numbers == null || numbers.length < 3 || numbers.length % 2 == 0) {
 			return -1;
@@ -107,7 +107,7 @@ public class Exercises {
 	}
 	
 	public String[] middle(String[] values) {
-		// write your code here
+		
 		String[] returnArray = new String[0];
 		if (values == null || values.length < 3 || values.length % 2 == 0) {
 			return returnArray;
@@ -133,7 +133,7 @@ public class Exercises {
 	}
 
 	public boolean increasing(int[] numbers) {
-		// write your code here
+		
 		
 		if (numbers == null || numbers.length < 3) {
 			return false;
@@ -151,7 +151,7 @@ public class Exercises {
 	}
 	
 	public boolean everywhere(int[] numbers, int x) {
-		// write your code here
+		
 		
 		if (numbers == null || numbers.length < 1) {
 			return false;
@@ -175,7 +175,7 @@ public class Exercises {
 	}
 	
 	public boolean consecutive(int[] numbers) {
-		// write your code here
+		
 		
 		if (numbers == null || numbers.length < 3) {
 			return false;
@@ -193,7 +193,7 @@ public class Exercises {
 	}
 	
 	public boolean balance(int[] numbers) {
-		// write your code here
+		
 		
 		if (numbers == null || numbers.length < 2) {
 			return false;
@@ -218,8 +218,8 @@ public class Exercises {
 		return false;	// default return value to ensure compilation
 	}
 	
-	public static int clumps(String[] values) {
-		// write your code here
+	public int clumps(String[] values) {
+		
 		
 		if (values == null) {
 			return -1;
@@ -244,10 +244,5 @@ public class Exercises {
 		}
 		
 		return -1;		// default return value to ensure compilation
-	}
-	
-	public static void main(String[] args) {
-		String[] test = new String[] {"abc","1","2","3","abc","7","7","7","abc","1","2","3","abc"};
-		System.out.println(clumps(test));
 	}
 }
