@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Exercises {
 
 	public boolean commonEnd(int[] a, int[] b) {
@@ -14,7 +16,7 @@ public class Exercises {
 		return false;	// default return value to ensure compilation
 	}
 	
-	public String[] endsMeet(String[] values, int n) {
+	public static String[] endsMeet(String[] values, int n) {
 		// write your code here
 		if (values == null || values.length == 0 || values.length < n || n < 0) {
 			String[] returnArray = new String[0];
@@ -26,8 +28,10 @@ public class Exercises {
 				endsMeet[i] = values[i];
 			}
 			
-			for(int j = values.length-(n+1); j < values.length; j++) {
-				endsMeet[j] = values[j];
+			int k = n;
+			for(int j = values.length-n; j < values.length; j++) {
+				endsMeet[k] = values[j];
+				k++;
 			}
 			
 			return endsMeet;
