@@ -143,8 +143,6 @@ public class Exercises {
 					return true;
 				}
 			}
-			
-			return false;
 		}
 		
 		return false;	// default return value to ensure compilation
