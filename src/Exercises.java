@@ -96,6 +96,8 @@ public class Exercises {
 				}else if(lastMax > midMax) {
 					return lastMax;
 				}
+			}else if(firstMax == midMax && midMax == lastMax) {
+				return firstMax;
 			}
 			
 			
