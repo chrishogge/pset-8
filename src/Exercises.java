@@ -7,11 +7,32 @@ public class Exercises {
 		
 		// write your code here
 		
+		if(a[0] == b[0] || a[a.length-1] == b[b.length-1]) {
+			return true;
+		}
+		
 		return false;	// default return value to ensure compilation
 	}
 	
 	public String[] endsMeet(String[] values, int n) {
 		// write your code here
+		if (values == null || values.length == 0 || values.length < n || n < 0) {
+			return null;
+		}else if(!(values == null || values.length == 0 || values.length < n || n < 0)){
+			String endsMeet[] = new String[n*2];
+			
+			for(int i = 0; i < n; i++) {
+				endsMeet[i] = values[i];
+			}
+			
+			for(int j = n; j < values.length; j++) {
+				endsMeet[j] = values[j];
+			}
+			
+			return endsMeet;
+			
+		}
+		
 		
 		return null;	// default return value to ensure compilation
 	}
