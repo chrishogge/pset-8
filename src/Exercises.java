@@ -108,6 +108,26 @@ public class Exercises {
 	
 	public String[] middle(String[] values) {
 		// write your code here
+		String[] returnArray = new String[0];
+		if (values == null || values.length < 3 || values.length % 2 == 0) {
+			return returnArray;
+		} else if(!(values == null || values.length < 3 || values.length % 2 == 0)) {
+			for(int a = 0; a < values.length; a++) {
+				if(values[a] == null) {
+					return returnArray;
+				}
+			}
+			
+			int mid = (values.length-1)/2;
+			
+			String firstString = values[mid-1];
+			String secondString = values[mid];
+			String thirdString = values[mid+1];
+			
+			String[] middleArray = new String[] {firstString,secondString,thirdString};
+			
+			return middleArray;
+		}
 		
 		return null;	// default return value to ensure compilation
 	}
