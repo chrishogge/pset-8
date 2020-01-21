@@ -17,7 +17,8 @@ public class Exercises {
 	public String[] endsMeet(String[] values, int n) {
 		// write your code here
 		if (values == null || values.length == 0 || values.length < n || n < 0) {
-			return null;
+			String[] returnArray = new String[0];
+			return returnArray;
 		}else if(!(values == null || values.length == 0 || values.length < n || n < 0)){
 			String endsMeet[] = new String[n*2];
 			
@@ -34,7 +35,8 @@ public class Exercises {
 		}
 		
 		
-		return null;	// default return value to ensure compilation
+		String[] returnArray = new String[0];
+		return returnArray;	// default return value to ensure compilation
 	}
 	
 	public int difference(int[] numbers) {
